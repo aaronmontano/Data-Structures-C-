@@ -1,20 +1,19 @@
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
 #include "ListNode.h" 
 
 class LinkedList {
 
     private:
-        ListNode head;
+        ListNode * head;
     
     public:
 
-        LinkedList ();
+        LinkedList (void);
 
-        LinkedList (int headData);
-
-        ~LinkedList ();
-
-        void printList ();
-
-        void insert ();
+        void printList (void);
 
 };
+
+#endif /* End LinkedList.h */ 
